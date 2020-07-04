@@ -1,5 +1,5 @@
-.contact{
-    height:80vh;
+ .contact{
+    height:90vh;
     background: rgb(66,92,83);
     background: radial-gradient(circle, rgb(99 , 0, 42) 0%, rgb(67, 0, 53) 100%);
     display: flex;
@@ -12,7 +12,7 @@
 .contact > h1{
     border: 1px solid white;
     text-align: center;
-    margin: 10vh;
+    padding: 5vh 0 4vh 0;
     font-size: 3rem;
 }
 

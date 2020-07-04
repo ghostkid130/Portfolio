@@ -1,21 +1,37 @@
 import React from 'react'
 import './about.css'
 
+import design from '../../assets/about/design.png'
+import code from '../../assets/about/code.png'
+import love from '../../assets/about/love.png'
+
 const About = () => {
     return (
         <div className="about">
             <h1>About</h1>
             <div className="about-qualification">
                 <div className="about-items">
-                    <spana>IMG 1</spana>
+                    <img 
+                        src={design}
+                        alt="Design Logo"
+                        className="about-logo"
+                    />
                     <span>Efficient Design</span>
                 </div>
                 <div className="about-items">
-                    <spana>IMG 2</spana>
+                    <img 
+                        src={code}
+                        alt="Code Logo"
+                        className="about-logo"
+                    />
                     <span>Modular Code</span>
                 </div>
                 <div className="about-items">
-                    <spana>IMG 3</spana>
+                <img 
+                        src={love}
+                        alt="Love Logo"
+                        className="about-logo"
+                    />
                     <span>Crafted with Love</span>
                 </div>
 

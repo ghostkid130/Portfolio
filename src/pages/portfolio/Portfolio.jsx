@@ -1,15 +1,21 @@
 import React from 'react'
 import './portfolio.css'
+import otg from '../../assets/portfolio/otg.png'
+import evented from '../../assets/portfolio/evented.png'
 
 const Portfolio = () => {
     return (
         <div className="portfolio">
             <h1>Projects</h1>
             <div className="project-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                <img 
+                    src={otg} 
+                    alt="On-The-Go Shopping"
+                    className="project-item"/>
+                <img 
+                    src={evented} 
+                    alt="On-The-Go Shopping"
+                    className="project-item"/>
             </div>
         </div>
     )

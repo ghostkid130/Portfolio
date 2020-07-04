@@ -1,5 +1,5 @@
 .about{
-    height: 90vw;
+    height: 100vh;
     background: rgb(66,92,83);
     background: radial-gradient(circle, rgb(33, 65, 53) 0%, rgb(33, 65, 53) 100%);
     align-items: center;
@@ -10,10 +10,12 @@
 
 .about > h1 {
     text-align: center;
+    padding: 5vh 0 4vh 0;
+    font-size: 3rem;
 }
 .about-qualification{
     height: 15vh;
-    width: 100%;
+    width: 70%;
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -57,4 +59,8 @@
     margin: 16px;
 }
 
-
+.about-logo{
+    width: 150px;
+    border: 1px solid white;
+    margin: 0 auto;
+}
