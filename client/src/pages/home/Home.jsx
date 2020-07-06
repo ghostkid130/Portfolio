@@ -3,11 +3,8 @@ import { Link } from 'react-scroll'
 import Nav from '../../components/Nav'
 import './home.css'
 
-import GitHub from '../../assets/GitHub-Logos/GitHub-Mark-64px.png'
-import LinkedIn from '../../assets/LinkedIn-Logos/linkedin-logo-white.png'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SocialIcon } from 'react-social-icons'
+import Particles from 'react-particles-js'
 
 const Home = () => {
     return (
@@ -23,11 +20,28 @@ const Home = () => {
                     <h1>Reynold Urena </h1>
                     <p>Full Stack Web Developer!</p>
                 </div>
-            
-                        
-                
+
+                <ul id="nav">
+                    <p>Home</p>
+                    <li></li>
+                    <p>About</p>
+                    <li></li>
+                    <p>Projects</p>
+                    <li></li>
+                    <p>Contact</p>
+                    <li></li>
+                </ul>
             </div>
+
+            
+
+            <Particles 
+                className="particles"
+                width="100vw"
+                height="100vh"
+            />
         </div>
+       
     )
 }
 

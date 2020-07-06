@@ -10,7 +10,6 @@
 
 
 .contact-form{
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     max-width: 40vw;

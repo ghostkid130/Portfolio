@@ -10,23 +10,27 @@ import Contact from './pages/contact/Contact';
 
 function App() {
   const { visibilityState, setVisibilityState } = useContext(VisibilityContext)
-
+  const myRef = React.createRef(); 
    
 
   function onChange(isVisible){
-    console.log(isVisible)
-    setVisibilityState({...visibilityState, [isVisible]: !visibilityState[isVisible]})
-    console.log(visibilityState)
+    // console.log(isVisible)
+    // setVisibilityState({...visibilityState, [isVisible]: !visibilityState[isVisible]})
+    // console.log(visibilityState)
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", console.log("Scrool"))
+    window.addEventListener("scroll", console.log(this))
+    console.log(myRef)
   }, [] )
 
-
+  const handleScroll = e => {
+    console.log(e)
+    console.log("Hello")
+  }
 
   return (
-    <>
+    <div ref={myRef}>
       <VisibilitySensor onChange={() => onChange("home")}>
         <Home name="home"/>
       </VisibilitySensor>
@@ -43,7 +47,7 @@ function App() {
         <Contact name="contact"/>
       </VisibilitySensor>
 
-    </>
+    </div>
   );
 }
 

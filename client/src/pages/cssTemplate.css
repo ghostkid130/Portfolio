@@ -4,11 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    border: 1px solid white;
 }
 
 .container > h1 {
-    border: 1px solid white;
     text-align: center;
     padding: 5vh 0 4vh 0;
     font-size: 3rem;
