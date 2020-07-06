@@ -16,23 +16,16 @@
     align-items: center;
     justify-content: center;
 }
-.navML > div{
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-}
 
-#linkedIn, #gitHub{
-    height: 64px;
+.icon{
     margin: 0px;
     padding: 0px;
     transition: all .2s ease-in-out;
-    background-color: grey;
+    margin: 8px 0 8px 8px;
 }
-#linkedIn:hover, #gitHub:hover{
+.icon:hover{
     transform: scale(1.2);
 }
-
 
 
 #tci{

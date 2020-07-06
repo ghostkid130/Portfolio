@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+import '../cssTemplate.css'
 
 const Contact = () => {
     const [ contact, setContact ] = React.useState({
@@ -12,7 +13,7 @@ const Contact = () => {
 
 
     return (
-        <div className="contact">
+        <div className="container contact">
             <h1>Contact</h1>
             <form 
                 action="https://formspree.io/moqkkejy" 

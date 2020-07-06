@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import '../cssTemplate.css'
 
 import design from '../../assets/about/design.png'
 import code from '../../assets/about/code.png'
@@ -7,9 +8,10 @@ import love from '../../assets/about/love.png'
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about container">
             <h1>About</h1>
             <div className="about-qualification">
+
                 <div className="about-items">
                     <img 
                         src={design}
@@ -18,6 +20,7 @@ const About = () => {
                     />
                     <span>Efficient Design</span>
                 </div>
+
                 <div className="about-items">
                     <img 
                         src={code}
@@ -26,6 +29,7 @@ const About = () => {
                     />
                     <span>Modular Code</span>
                 </div>
+
                 <div className="about-items">
                 <img 
                         src={love}
@@ -34,6 +38,7 @@ const About = () => {
                     />
                     <span>Crafted with Love</span>
                 </div>
+                
             </div>
             <div className="about-mid">
                 <div id="about-left">

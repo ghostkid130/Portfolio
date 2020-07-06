@@ -1,20 +1,13 @@
  .contact{
-    height:90vh;
     background: rgb(66,92,83);
     background: radial-gradient(circle, rgb(99 , 0, 42) 0%, rgb(67, 0, 53) 100%);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    border: 1px solid white;
+    border: 1px solid white; */
 }
 
-.contact > h1{
-    border: 1px solid white;
-    text-align: center;
-    padding: 5vh 0 4vh 0;
-    font-size: 3rem;
-}
 
 .contact-form{
     border: 1px solid white;

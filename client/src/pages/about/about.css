@@ -1,38 +1,25 @@
 .about{
-    height: 100vh;
     background: rgb(66,92,83);
     background: radial-gradient(circle, rgb(33, 65, 53) 0%, rgb(33, 65, 53) 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
-.about > h1 {
-    border: 1px solid white;
-    text-align: center;
-    padding: 5vh 0 4vh 0;
-    font-size: 3rem;
-    width: 100%;
-}
 .about-qualification{
-    height: 15vh;
-    width: 100%;
-    text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
     justify-content: space-evenly;
-    margin: 5vh;
-    /* display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr; */
     border: 1px solid white;
+    text-align: center;
+    margin: 0 auto;
+    
 }
 .about-items{
     display: flex;
     flex-direction: column;
     font-size: 24px;
     font-weight: 500;
+    width: 250px;
+    margin: 0 20px 25px 20px;
 }
 
 
