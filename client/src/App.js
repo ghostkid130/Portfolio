@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import VisibilitySensor from 'react-visibility-sensor'
 import { VisibilityContext } from './context/VisibilityContext'
 
@@ -10,27 +10,26 @@ import Contact from './pages/contact/Contact';
 
 function App() {
   const { visibilityState, setVisibilityState } = useContext(VisibilityContext)
-  const myRef = React.createRef(); 
    
 
   function onChange(isVisible){
-    // console.log(isVisible)
-    // setVisibilityState({...visibilityState, [isVisible]: !visibilityState[isVisible]})
-    // console.log(visibilityState)
+    console.log(isVisible)
+    setVisibilityState({...visibilityState, [isVisible]: !visibilityState[isVisible]})
+    console.log(visibilityState)
   }
 
   useEffect(() => {
     const height = document.body.offsetHeight - window.innerHeight
-    window.addEventListener("scroll", () => setVisibilityState(window.pageYOffset/height))
-  }, [] )
+    window.addEventListener("scroll", () => {
+      const v = (window.pageYOffset/height).toFixed(2)
+      setVisibilityState(v);
+      console.log(v)
 
-  const handleScroll = e => {
-    console.log(e)
-    console.log("Hello")
-  }
+    })
+  }, [setVisibilityState] )
 
   return (
-    <div ref={myRef}>
+    <div>
       <VisibilitySensor onChange={() => onChange("home")}>
         <Home name="home"/>
       </VisibilitySensor>

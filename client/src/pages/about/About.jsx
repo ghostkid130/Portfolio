@@ -10,8 +10,10 @@ import love from '../../assets/about/love.png'
 
 const About = () => {
     return (
+        <div className="about">
+        <div/>
         <div className="about container">
-            <h1>About</h1>
+            <h1 className='title'>About</h1>
             <div className="about-qualification">
 
                 <div className="about-items">
@@ -53,6 +55,7 @@ const About = () => {
                     <h1>Express</h1>
                     <h1>Material-UI</h1>
                 </div>
+            </div>
             </div>
             <Nav />
         </div>

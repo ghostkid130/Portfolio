@@ -1,52 +1,49 @@
-/**@jsx jsx */
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-scroll'
-import { jsx, css, Global, ClassNames } from '@emotion/core'
 import './components.css'
+
+import { VisibilityContext } from '../context/VisibilityContext'
+
+
+
 const Nav = () => {
+    const { visibilityState } = useContext(VisibilityContext)
+
+
     return (
         <div className="navContainer">
-            <div className="navL">
-                <h1>Rey</h1>
-            </div>
-            <div 
-                className="navMenu" 
-                css={css`
-                    
-                `}
-            >
-                <ul id="nav" 
-                    css={css`
-                        &:after: {
-                            content: '',
-                            position: 'absolute',
-                            borderRight: '1px solid green',
-                            height: '400px',
-                            width: '0px',
-                            top: '3px',
-                            right: '.75rem',
-                            zIndex: '0'
-                        }
-                    `}
-                    >
-                    <p>Home</p>
-                    <li></li>
-                    <p>About</p>
-                    <li></li>
-                    <p>Projects</p>
-                    <li></li>
-                    <p>Contact</p>
-                    <li></li>
+            <div style={{position:"relative"}}>
+                <ul id="nav">
+                    <Link smooth={true} duration={250} to="home">
+                        <p>Home</p>
+                        </Link>
+                        <Link smooth={true} duration={250} to="home">
+                        <li></li>
+                    </Link>
+
+                    <Link smooth={true} duration={250} to="about">
+                        <p>About</p>
+                        </Link>
+                        <Link smooth={true} duration={250} to="about">
+                        <li></li>
+                    </Link>
+
+                    <Link smooth={true} duration={250} to="portfolio">
+                        <p>Projects</p>
+                        </Link>
+                        <Link smooth={true} duration={250} to="portfolio">
+                        <li></li>
+                    </Link>
+
+                    <Link smooth={true} duration={250} to="contact">
+                        <p>Contact</p>
+                        </Link>
+                        <Link smooth={true} duration={250} to="contact">
+                        <li></li>
+                    </Link>
                 </ul>
-                {/* <Link smooth={true} duration={250} to="about">
-                    <h1>About</h1>
-                </Link>
-                <Link smooth={true} duration={250} to="portfolio">
-                    <h1>Projects</h1>
-                </Link>
-                <Link smooth={true} duration={250} to="contact">
-                    <h1>Contact</h1>
-                </Link> */}
+                <p id="test" 
+                    style={{ height:`${165*visibilityState}px`}} />
             </div>
         </div>
     )

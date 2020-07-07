@@ -3,12 +3,15 @@ import './portfolio.css'
 import '../cssTemplate.css'
 import otg from '../../assets/portfolio/otg.png'
 import evented from '../../assets/portfolio/evented.png'
+import Nav from '../../components/Nav'
 
 
 const Portfolio = () => {
     return (
         <div className="portfolio container">
-            <h1 >Projects</h1>
+            <div/>
+            <div className="mainBody">
+            <h1 className='title'>Projects</h1>
             <div className="projects-container">
                 <div className="project">
                     <img 
@@ -28,6 +31,11 @@ const Portfolio = () => {
 
                 </div>
             </div>
+            </div>
+
+
+            <Nav />
+
         </div>
     )
 }

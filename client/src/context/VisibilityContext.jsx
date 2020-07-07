@@ -3,10 +3,7 @@ import React, { useState } from 'react';
 export const VisibilityContext = React.createContext()
 
 const VisibilityContextProvider = ( props ) => {
-    const [ visibilityState, setVisibilityState ] = useState({
-        'about': false, 'contact': false,
-        'home': true, 'portfolio': false
-    })
+    const [ visibilityState, setVisibilityState ] = useState(0)
 
 
     return (

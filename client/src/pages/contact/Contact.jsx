@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
 import '../cssTemplate.css'
+import Nav from '../../components/Nav'
 
 const Contact = () => {
     const [ contact, setContact ] = React.useState({
@@ -14,7 +15,9 @@ const Contact = () => {
 
     return (
         <div className="container contact">
-            <h1>Contact</h1>
+            <div />
+            <div style={{alignSelf:"center"}}>
+            <h1 className="title">Contact</h1>
             <form 
                 action="https://formspree.io/moqkkejy" 
                 method="POST"
@@ -49,6 +52,8 @@ const Contact = () => {
                     Send Message
                 </button>
             </form>
+        </div>
+        <Nav />
         </div>
     )
 }
