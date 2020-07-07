@@ -20,8 +20,8 @@ function App() {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", console.log(this))
-    console.log(myRef)
+    const height = document.body.offsetHeight - window.innerHeight
+    window.addEventListener("scroll", () => setVisibilityState(window.pageYOffset/height))
   }, [] )
 
   const handleScroll = e => {

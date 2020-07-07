@@ -2,6 +2,8 @@ import React from 'react'
 import './about.css'
 import '../cssTemplate.css'
 
+import Nav from '../../components/Nav'
+
 import design from '../../assets/about/design.png'
 import code from '../../assets/about/code.png'
 import love from '../../assets/about/love.png'
@@ -38,7 +40,7 @@ const About = () => {
                     />
                     <span>Crafted with Love</span>
                 </div>
-                
+
             </div>
             <div className="about-mid">
                 <div id="about-left">
@@ -52,6 +54,7 @@ const About = () => {
                     <h1>Material-UI</h1>
                 </div>
             </div>
+            <Nav />
         </div>
     )
 }

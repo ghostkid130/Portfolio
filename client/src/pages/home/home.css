@@ -95,15 +95,15 @@
     margin-right: 6px;
 }
       
-#nav:after { 
+/* #nav:after { 
     content: '';
     position: absolute;
     border-right: 1px green solid;
-    height: 100px;
+    /* height: 200px;
     width: 0px;
     top: 3px;
     right: .75rem;
     z-index: 0;
-    /* transform: translateX(-200px); */
-}
+    /* transform: translateX(-200px);
+} */
 
