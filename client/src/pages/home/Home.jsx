@@ -9,7 +9,6 @@ import Particles from 'react-particles-js'
 const Home = () => {
     return (
         <div className="home">
-            <Nav />
             <div className="home-container">
                 <div className="navML">
                     <SocialIcon className="icon" url="https://linkedin.com/in/reynoldu" />
@@ -21,16 +20,8 @@ const Home = () => {
                     <p>Full Stack Web Developer!</p>
                 </div>
 
-                <ul id="nav">
-                    <p>Home</p>
-                    <li></li>
-                    <p>About</p>
-                    <li></li>
-                    <p>Projects</p>
-                    <li></li>
-                    <p>Contact</p>
-                    <li></li>
-                </ul>
+                <Nav />
+
             </div>
 
             
@@ -39,6 +30,7 @@ const Home = () => {
                 className="particles"
                 width="100vw"
                 height="100vh"
+
             />
         </div>
        
