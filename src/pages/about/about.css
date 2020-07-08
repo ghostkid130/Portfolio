@@ -6,10 +6,6 @@
     justify-content: space-between;
 }
 
-.entire-about{
-    
-}
-
 .about-qualification{
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +36,11 @@
 
 #about-left{
     width: 30vw;
+    text-align: left;
+    padding: 40px;
 }
+
+
 
 #about-right{
     display: flex;
