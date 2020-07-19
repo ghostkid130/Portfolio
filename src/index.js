@@ -8,7 +8,7 @@ import { VisibilityContextProvider } from './context/VisibilityContext';
 ReactDOM.render(
   <React.StrictMode>
     <VisibilityContextProvider>
-      <App />
+      {/* <App /> */}
     </VisibilityContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

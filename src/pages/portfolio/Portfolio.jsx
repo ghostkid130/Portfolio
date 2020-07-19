@@ -32,9 +32,9 @@ const Portfolio = () => {
                 </div>
             </div>
             </div>
+            <div />
 
-
-            <Nav />
+            {/* <Nav /> */}
 
         </div>
     )

@@ -57,7 +57,8 @@ const About = () => {
                 </div>
             </div>
             </div>
-            <Nav />
+            <div />
+            {/* <Nav /> */}
         </div>
     )
 }

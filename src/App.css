@@ -4,3 +4,9 @@
   margin: 0px;
   font-family: 'Raleway', sans-serif;
 }
+
+#nav-abs{
+  position: absolute;
+  left: 0;
+  border: 1px solid black;
+}
