@@ -7,6 +7,7 @@ import './App.css';
 import About from './pages/about/About';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
+import Nav from './components/NavTwo'
 
 function App() {
   const { visibilityState, setVisibilityState } = useContext(VisibilityContext)
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div>
+      <Nav id="nav-abs"/>
       <VisibilitySensor onChange={() => onChange("home")}>
         <Home name="home"/>
       </VisibilitySensor>

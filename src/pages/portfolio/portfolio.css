@@ -31,7 +31,6 @@
 
 .project > img:hover{
     opacity: .1;
-    z-index: inherit;
 }
 
 .project-item{

@@ -20,8 +20,8 @@ const Home = () => {
                     <p>Full Stack Web Developer!</p>
                 </div>
 
-                <Nav />
-
+                {/* <Nav /> */}
+                <div />
             </div>
 
             
