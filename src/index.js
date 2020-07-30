@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { VisibilityContextProvider } from './context/VisibilityContext';
+import { RenderStatusContextProvider } from './context/RenderStatus'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <VisibilityContextProvider>
-      <App />
-    </VisibilityContextProvider>
+    <RenderStatusContextProvider >
+      <Router>
+        <App />
+      </Router>
+    </RenderStatusContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

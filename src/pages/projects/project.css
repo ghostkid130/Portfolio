@@ -1,0 +1,28 @@
+#projects{
+    height: 100vh;
+    background-color: grey;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0 10vh 0;
+}
+
+.description{
+    max-width: 480px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}

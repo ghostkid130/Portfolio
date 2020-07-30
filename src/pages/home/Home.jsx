@@ -1,39 +1,38 @@
-import React from 'react'
-import { Link } from 'react-scroll'
-import Nav from '../../components/Nav'
+import React, {useState} from 'react';
+import AOS from 'aos';
+
 import './home.css'
 
 import { SocialIcon } from 'react-social-icons'
 import Particles from 'react-particles-js'
 
 const Home = () => {
+    const [ prop, setProp ] = useState(false)
+    AOS.init()
+
+    const Desc = ({ delay, text}) => {
+        return(
+            <p 
+                data-aos="fade-down"
+                data-aos-delay={delay}
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+            >
+                {text}
+            </p>
+        )
+    }
+ 
     return (
         <div className="home">
-            <div className="home-container">
-                <div className="navML">
-                    <SocialIcon className="icon" url="https://linkedin.com/in/reynoldu" />
-                    <SocialIcon className="icon" url="https://github.com/ghostkid130"/>
-                </div>
-
-                <div id="tci">
-                    <h1>Reynold Urena </h1>
-                    <p>Full Stack Web Developer!</p>
-                </div>
-
-                <Nav />
-
+            <h1 data-aos="fade-up" id="rey">Reynold Urena</h1>
+            <div className="home-attr" style={{border: "1px solid black", overflow:"hidden"}}>
+                <Desc delay="50" text="Developer" />
+                <Desc delay="90" text="Photographer" />
+                <Desc delay="160" text="Musician" />
             </div>
-
-            
-
-            <Particles 
-                className="particles"
-                width="100vw"
-                height="100vh"
-
-            />
         </div>
-       
     )
 }
 
