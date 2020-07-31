@@ -1,0 +1,50 @@
+#contact{
+    background-color: khaki;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact > h1{
+    font-size: 4em;
+    text-decoration-line: overline underline;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+}
+#contact-form > p {
+    font-size: 2rem;
+    margin-top: 16px;
+}
+
+#contact-form > input{
+    height: 60px;
+    font-size: 32px;;
+    border: none;
+    border-radius: 6px;
+}
+#contact-form > button{
+    height: 60px;
+    margin: 48px 0 0 0;
+    width: 30%;
+    align-self: center;
+    border-radius: 5px;
+    outline:none;
+    border-width: 0px;
+    font-size: 24px;
+}
+
+#contact-textarea{
+    max-width: 30vw;
+    min-width: 30vw;
+    font-size: 32px;;
+    border-radius: 6px;
+    border: none;
+}
+

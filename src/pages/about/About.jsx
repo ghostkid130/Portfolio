@@ -1,17 +1,14 @@
 import React, { useState, useContext } from 'react'
 import './about.css'
-import { RenderStatus, RenderStatusContextProvider } from '../../context/RenderStatus'
-import { render } from '@testing-library/react'
+import { RenderStatus } from '../../context/RenderStatus'
 
-import { useHistory } from 'react-router-dom'
 
 
 
 const About = () => {
-    const history = useHistory()
     const [ click, setClick ] = useState(false)
     const { loadBio, setLoadBio } = useContext(RenderStatus)
-    const [ test, setTest ] = useState(false)
+    const [ qS, setQS] = useState([])
 
 
     const Desc = ({ delay, text, id, trans}) => {
@@ -65,20 +62,16 @@ const About = () => {
 
 
     React.useEffect( () => {
-        setTimeout( () => { return setLoadBio(true)}
-        , 6000 )
+        if(click){ setTimeout( () => setLoadBio(true), 2000 ) }
     }, [click] )
 
     return (
         <div className="about">
             <div id="rey-intro">
-                {console.log("Test", loadBio)}
                 {!click && <Desc       id="1" delay="100" text="So"      trans="fade-down"/>}
                 {click && <p id="intro-1">So</p>}
-
                 {!click && <Desc       id="2" delay="300" text="Who's"   trans="fade-down"/>}
                 {click && <p id="intro-2">Who's</p>}
-
                 {click && 
                     <p id="intro-3">
                         Reyn
@@ -86,12 +79,35 @@ const About = () => {
                                 o
                             </span>
                         old Urena
-                    </p>} 
+                    </p>
+                }
                 {!click && <Trick      id="3" delay="500" text="Rey"     trans="fade-up" />}
                 {click && <p id="intro-4">?</p>}
                 {!click && <Question   id="4" delay="800" text="?"       trans="fade-up"/>
             }
+            </div>
+            <div >
+                    <div
+                        id="qMaster" 
+                        data-aos="fade-up" 
+                        data-aos-duration="2000"
+                        data-aos-delay="500"
+                        data-aos-easing="ease-in-out"
+                        style={{left:"20vw"}}
+                    >
 
+                        ?
+                    </div>
+                    <div
+                        id="qMaster" 
+                        data-aos="fade-down" 
+                        data-aos-duration="2000"
+                        data-aos-delay="500"
+                        data-aos-easing="ease-in-out"
+                        style={{left:"9vw"}}
+                    >
+                        ¿
+                    </div>
             </div>
         </div>
     )

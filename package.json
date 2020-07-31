@@ -17,6 +17,7 @@
     "react-scripts": "^3.4.1",
     "react-scroll": "^1.8.0",
     "react-social-icons": "^4.1.0",
+    "react-starfield-animation": "^1.0.1",
     "react-transition-group": "^1.2.1",
     "react-visibility-sensor": "^5.1.1",
     "windups": "^1.0.2"

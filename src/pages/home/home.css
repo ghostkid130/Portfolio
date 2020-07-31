@@ -5,7 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+}
+
+#rey{
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 .particles{
@@ -21,4 +26,21 @@
 }
 .home-attr > p{
     margin: 16px;
+}
+
+.home-text{
+    font-size: 1.25em;
+    font-weight: 150;
+    text-transform:uppercase;
+}
+
+#hDeveloper:hover{
+    color: grey;
+}
+#hPhotographer:hover{
+    color: grey;
+}
+
+#hMusician:hover{
+    color: grey;
 }

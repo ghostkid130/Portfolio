@@ -4,20 +4,20 @@ import './App.css';
 import Projects from './pages/projects/Projects';
 import About from './pages/about/About';
 import Bio from './pages/bio/Bio'
-import VisibilitySensor from 'react-visibility-sensor'
 
 
 import { RenderStatus } from './context/RenderStatus'
+import Contact from './pages/contact/Contact';
 
 function App() {
-  const { loadBio, setLoadBio } = React.useContext(RenderStatus)
+  const { loadBio } = React.useContext(RenderStatus)
   return (
     <div>
       <Home />
       <Projects />
-      {!loadBio && <About /> }
-      {/* {loadBio && <Bio name="bio"/> }  */}
-      <Bio />
+      {!loadBio &&  <About />         }
+      {!loadBio &&   <Bio name="bio"/> } 
+      {!loadBio &&   <Contact />       }
     </div>
   );
 }
