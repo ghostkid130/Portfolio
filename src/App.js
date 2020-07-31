@@ -16,8 +16,8 @@ function App() {
       <Home />
       <Projects />
       {!loadBio &&  <About />         }
-      {!loadBio &&   <Bio name="bio"/> } 
-      {!loadBio &&   <Contact />       }
+      {loadBio &&   <Bio name="bio"/> } 
+      {loadBio &&   <Contact />       }
     </div>
   );
 }
