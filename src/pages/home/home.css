@@ -1,65 +1,46 @@
 .home{
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#rey{
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
 .particles{
     position: absolute;
     top:0;
     z-index: -5;
     background: rgb(62,84,89);
     background: radial-gradient(circle, rgba(62,84,89,1) 0%, rgba(21,52,64,1) 100%);
-
 }
 
-.home-container{
+.home-attr{
     display: flex;
-    flex-direction: row;
+}
+.home-attr > p{
+    margin: 16px;
 }
 
-.navML{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.icon{
-    margin: 0px;
-    padding: 0px;
-    transition: all .2s ease-in-out;
-    margin: 8px 0 8px 8px;
-}
-.icon:hover{
-    transform: scale(1.2);
+.home-text{
+    font-size: 1.25em;
+    font-weight: 150;
+    text-transform:uppercase;
 }
 
-
-#tci{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 10vw 0 10vw;
-    font-size: 2rem;
-    text-transform: uppercase;
-    height: 80vh;
+#hDeveloper:hover{
+    color: grey;
 }
-#think{
-    grid-row: 1;
-    grid-column: 1 / span 5;
+#hPhotographer:hover{
+    color: grey;
 }
 
-
-#create{
-    grid-row: 2;
-    grid-column: 2 / span 5;
-}
-#innovate{
-    grid-row: 3;
-    grid-column: 3 / span 5;
-}
-#rey{
-    grid-row: 4;
-    grid-column: 4 / span 5;
+#hMusician:hover{
+    color: grey;
 }

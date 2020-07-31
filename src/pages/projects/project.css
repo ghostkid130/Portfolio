@@ -1,0 +1,98 @@
+#projects{
+    height: 200vh;
+    background-color: #00346B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0 10vh 0;
+}
+#title-proj{
+    font-size: 4em;
+    margin-top: 20vh;
+}
+
+.project > img{
+    border-radius: 10px;
+}
+
+.description{
+    max-width: 480px;
+    height: 80%;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.description > p {
+    color: #b9c4ff;
+}
+
+.break{
+    width: 30vw;
+    color: none;
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0078F7;
+    background-color: none;
+}
+
+.project-transition{
+    display: grid;
+    margin-top: 24px;
+    grid-template-rows: 24px 16px 12px 8px 4px 2px 1px;
+    row-gap: 10vh;
+}
+
+#proj-1{
+    width: 100vw;
+    background-color:black;
+
+}
+#proj-2{
+    width: 80vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+
+}
+#proj-3{
+    width: 60vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+
+}
+#proj-4{
+    width: 40vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+}
+#proj-5{
+    width: 20vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+}
+#proj-6{
+    width: 5vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+}
+#proj-7{
+    width: 1vw;
+    justify-self: center;
+    background-color:black;
+    border-radius: 5px;
+}

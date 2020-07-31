@@ -1,42 +1,50 @@
- .contact{
-    background: rgb(66,92,83);
-    background: radial-gradient(circle, rgb(99 , 0, 42) 0%, rgb(67, 0, 53) 100%);
-    /* display: flex;
+#contact{
+    background-color: khaki;
+    height: 120vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    border: 1px solid white; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
 }
 
+#contact > h1{
+    font-size: 4em;
+    text-decoration-line: overline underline;
+}
 
-.contact-form{
+#contact-form{
     display: flex;
     flex-direction: column;
-    max-width: 40vw;
-    margin: 0 auto;
+    width: 30vw;
+    height: 80vh;
+}
+#contact-form > p {
+    font-size: 2rem;
+    margin-top: 16px;
 }
 
-.contact-input{
-    height: 3rem;
+#contact-form > input{
+    height: 60px;
+    font-size: 32px;;
+    border: none;
+    border-radius: 6px;
+}
+#contact-form > button{
+    height: 60px;
+    margin: 48px 0 0 0;
+    width: 30%;
+    align-self: center;
     border-radius: 5px;
-    border-color: none;
-    margin: 4px;
-    padding: 16px;
-    font-size: 1.5rem;
-    color: black;
-    max-width: 40vw;
-}
-.contact-input:focus{ 
-    background-color: none;
-    outline: none;
+    outline:none;
+    border-width: 0px;
+    font-size: 24px;
 }
 
-.contact-form > button {
-    width: 15vw;
-    font-size: 1rem;
-    margin: 4px;
-    height: 4vh;
+#contact-textarea{
+    max-width: 30vw;
+    min-width: 30vw;
+    font-size: 32px;;
+    border-radius: 6px;
+    border: none;
 }
+

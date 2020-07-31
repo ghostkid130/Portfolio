@@ -1,39 +1,54 @@
-import React from 'react'
-import { Link } from 'react-scroll'
-import Nav from '../../components/Nav'
-import './home.css'
+import React, {useState} from 'react';
+import AOS from 'aos';
 
-import { SocialIcon } from 'react-social-icons'
+import './home.css'
+import StarfieldAnimation from 'react-starfield-animation'
+
+
 import Particles from 'react-particles-js'
 
 const Home = () => {
+    const [ prop, setProp ] = useState(false)
+    AOS.init()
+
+    const Desc = ({ delay, text, iD}) => {
+        return(
+            <p 
+                data-aos="fade-down"
+                data-aos-delay={delay}
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                className="home-text"
+                id={iD}
+            >
+                {text}
+            </p>
+        )
+    }
+ 
     return (
         <div className="home">
-            <div className="home-container">
-                <div className="navML">
-                    <SocialIcon className="icon" url="https://linkedin.com/in/reynoldu" />
-                    <SocialIcon className="icon" url="https://github.com/ghostkid130"/>
-                </div>
-
-                <div id="tci">
-                    <h1>Reynold Urena </h1>
-                    <p>Full Stack Web Developer!</p>
-                </div>
-
-                <Nav />
-
+            <h1 data-aos="fade-up" id="rey">Reynold Urena.</h1>
+            <div 
+                className="home-attr" 
+                style={{border: "1px solid black", overflow:"hidden"}}
+            >
+                <Desc delay="100" text="Developer"      iD="hDeveloper"/>
+                <Desc delay="190" text="Photographer"   iD="hPhotographer"/>
+                <Desc delay="260" text="Musician"       iD="hMusician"/>
             </div>
-
-            
-
-            <Particles 
-                className="particles"
-                width="100vw"
-                height="100vh"
-
+            <StarfieldAnimation
+                style={{
+                    position: 'absolute',
+                    zIndex: "-5",
+                    width: '100%',
+                    height: '100%',
+                    backgroundColor: "black"
+                }}
+                numParticles="50"
             />
         </div>
-       
     )
 }
 
