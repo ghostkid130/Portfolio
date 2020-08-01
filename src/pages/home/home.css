@@ -44,3 +44,12 @@
 #hMusician:hover{
     color: grey;
 }
+
+
+@media (max-width: 470px){
+    .home-attr{
+        display: grid;
+        grid-template-rows: 3em 3em 3em;
+        text-align: center;
+    }
+}

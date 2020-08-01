@@ -2,6 +2,7 @@
     height: 200vh;
     background-color: #00346B;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -96,3 +97,5 @@
     background-color:black;
     border-radius: 5px;
 }
+
+
