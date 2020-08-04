@@ -1,27 +1,37 @@
 #contact{
-    background-color: khaki;
+    background-color: rgb(214, 255, 209);
     height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 #contact > h1{
     font-size: 4em;
     text-decoration-line: overline underline;
+    margin: 48px;
+    color: black;
 }
 
 #contact-form{
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    height: 80vh;
+    width: 40vw;
     min-width: 330px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 5px 2px #888888b7;
+    padding: 24px;
+    overflow: hidden;
+
 }
 #contact-form > p {
     font-size: 2rem;
     margin-top: 16px;
+    color: black;
+    text-transform: capitalize;
 }
 
 #contact-form > input{
@@ -33,7 +43,7 @@
 #contact-form > button{
     height: 60px;
     margin: 48px 0 0 0;
-    width: 30%;
+    width: 40%;
     align-self: center;
     border-radius: 5px;
     outline:none;
@@ -42,7 +52,7 @@
 }
 
 #contact-textarea{
-    max-width: 30vw;
+    max-width: 40vw;
     min-width: 330px;
     font-size: 32px;;
     border-radius: 6px;

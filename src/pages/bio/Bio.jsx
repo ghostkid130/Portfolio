@@ -1,12 +1,11 @@
 import React from 'react'
 import './bio.css'
-import { useWindupString, WindupChildren, Pause } from "windups";
 import { SocialIcon } from 'react-social-icons'
+import { Link } from 'react-scroll'
 
 
 
 const Bio = () => {
-    const [rey] = useWindupString("Rey")
 
     return (
         <div data-aos="fade-in" data-aos-duration="5000" id="bio">
@@ -54,9 +53,11 @@ const Bio = () => {
                     id="bio-tech"
                 >
                         Got any question?  
+                        <Link to="contact" smooth={true} duration={500}>
                         <span id="contact-contact">
                              Contact Me!
                         </span>
+                        </Link>
                 </h1>
             </div>
             </div>

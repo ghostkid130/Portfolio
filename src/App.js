@@ -4,6 +4,8 @@ import './App.css';
 import Projects from './pages/projects/Projects';
 import About from './pages/about/About';
 import Bio from './pages/bio/Bio'
+import { Element } from 'react-scroll'
+
 
 
 import { RenderStatus } from './context/RenderStatus'
@@ -17,7 +19,7 @@ function App() {
       <Projects />
       {!loadBio &&  <About />         }
       {loadBio &&   <Bio name="bio"/> } 
-      {loadBio &&   <Contact />       }
+      {loadBio &&   <Element  name="contact"> <Contact /> </Element>       }
     </div>
   );
 }

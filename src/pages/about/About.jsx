@@ -7,8 +7,7 @@ import { RenderStatus } from '../../context/RenderStatus'
 
 const About = () => {
     const [ click, setClick ] = useState(false)
-    const { loadBio, setLoadBio } = useContext(RenderStatus)
-    const [ qS, setQS] = useState([])
+    const { setLoadBio } = useContext(RenderStatus)
 
 
     const Desc = ({ delay, text, id, trans}) => {
