@@ -24,7 +24,6 @@ const Projects = () => {
             <h1 
                 data-aos="fade-up" 
                 id="title-proj" 
-                className="title"
             >
                     Projects
             </h1>

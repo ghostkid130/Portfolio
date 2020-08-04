@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { RenderStatusContextProvider } from './context/RenderStatus'
@@ -10,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <RenderStatusContextProvider >
       <Router>
-        <App />
+        <App id="app-entry"/>
       </Router>
     </RenderStatusContextProvider>
   </React.StrictMode>,

@@ -83,7 +83,7 @@
 
 .grow-o{
     /* -webkit-animation-duration: 1s; */
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay: .75s;
     animation-name: grow;
 }
@@ -91,9 +91,12 @@
 @keyframes grow { 
     from{
         font-size: 8rem;
+        opacity: 1;
+
     }
     to{
         transform: scale(80);
+        opacity: .4;
         /* font-size: 20rem; */
     }
 } 
